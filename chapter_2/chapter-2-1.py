@@ -71,7 +71,7 @@ print("The avarage of your no. is : ", sum)
 
 '''
 a = float(input("Enter your number \n"))
-b = a*a
+b = a**2
 print("Your length is ", a, "and square is ", b)
 
 '''

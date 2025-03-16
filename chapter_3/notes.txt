@@ -1,0 +1,14 @@
+    ** String **
+
+    String is a data type in python. String is a sequence of a characters enclosed in quotes.
+    We can primerly write string in these three ways
+
+    1. Single quotes        ----> a = 'Sameer kadyan'
+    2. Double quotes        ----> a = "Sameer kadyan"
+    3. Triple quotes        ----> a = '''Sameer kadyan'''
+
+    ** String Slicing **
+
+    A string in python can be sliced for getting a part of the string
+    Consider the following string.
+
