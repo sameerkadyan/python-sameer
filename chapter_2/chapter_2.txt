@@ -1,0 +1,78 @@
+                                Chapter 2
+
+    1.  Datatype and Variables
+                            |
+                            |-->  Variables
+
+    A variable is the name given to a memory location in a program. For example
+
+    a = 30          # variable     = container to store a value
+    b = "Sameer"    # keywords     = reserved words in python
+    c = 31.65       # identifiers  = class/function/Variables name
+
+
+                            |
+                            |-->  Data Types
+    primerly there are following data types in python
+
+    1. Interger
+    2. Floating point numbers
+    3. Strings
+    4. Booleans 
+    5. None
+
+    Python is the fantastic language that automatically identifies types of data for us
+
+    a = 71              ====> identifies a as class <int>
+    a = 65.32           ====> identifies b as class <float>
+    c = "Sameer"        ====> identifies c as class <str>
+
+    Rules for defining the variable name                ----> Also applies to other identifies
+
+    ---> A variable contains alphabets,numbers and underscore.
+    ---> A variable name can only start with an alphabets and underscores.
+    ---> A variable name can't start with a digit.
+    ---> No white space allowed to be used inside a variable name.
+
+
+    Examples of a few Variables name are:- 
+                                            sameer, _kadyan, one8, sameer_ etc;
+
+
+
+
+                                            Operators in python
+
+                            following are some common Operators in python 
+
+                    1. Arithmatic operators ==> +,-,*,/ etc;
+                    2. Assignment operators ==> =, +=, -=, etc;
+                    3. Comparison operators ==> ==, =>, >, <, != etc;
+                    4. Logical Operators    ==> and or not;
+
+
+                        ------ type () function and typecasting 
+
+                    type function is used to find the data type of a given variable in python
+
+            a = 21;         type(a) ==> <class 'int'>
+            b = "Sameer"    type(b) ==> <class 'str'>
+
+
+    ****    A number can be converted into a string and vice verse ( if possible )
+            There are many functions to convert one data type into another 
+
+        1. str(43)      ==> "43"  ==> Interger to string conversion
+        2. int("65")    ==> 65    ==> strngs to Integer conversion
+        3. float(32)    ==> 32.00 ==> Integer to float conversion
+                                                                ...........and So one
+
+
+
+                        ------input() functions
+                    
+                    This function allow the user to take input from the keyboard as a string
+
+                    a = input("Enter the name ");
+                    
+                    ** It is important to note that the output of input always is string ..
