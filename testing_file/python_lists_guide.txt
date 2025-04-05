@@ -1,0 +1,64 @@
+
+What is a List in Python?
+
+A list is a built-in data type that is used to store multiple items in a single variable. It’s like a container where you can keep different values — numbers, strings, even other lists.
+
+Syntax:
+    my_list = [1, 2, 3, 4, 5]
+
+- Lists are created using square brackets [].
+- The items are ordered, changeable (mutable), and allow duplicates.
+
+Key Features:
+
+Feature         | Description
+----------------|--------------------------------------------
+Ordered         | Items have a defined order (index)
+Mutable         | You can change, add, or remove items
+Indexed         | Access items using their position
+Duplicates OK   | Lists can have repeated values
+Mixed types     | Can contain numbers, strings, etc., together
+
+Common Operations:
+
+Access Items:
+    my_list = ['a', 'b', 'c']
+    print(my_list[0])  # Output: 'a'
+
+Change Items:
+    my_list[1] = 'z'
+    print(my_list)  # ['a', 'z', 'c']
+
+Add Items:
+    my_list.append('d')       # Adds to the end
+    my_list.insert(1, 'x')    # Inserts at index 1
+
+Remove Items:
+    my_list.remove('a')       # Removes the item 'a'
+    del my_list[0]            # Deletes item at index 0
+    my_list.pop()             # Removes and returns last item
+
+Loop Through:
+    for item in my_list:
+        print(item)
+
+Check if Item Exists:
+    if 'z' in my_list:
+        print("Found it!")
+
+List Length:
+    print(len(my_list))  # Number of items
+
+Advanced (Optional):
+
+Slicing:
+    my_list = [1, 2, 3, 4, 5]
+    print(my_list[1:4])  # [2, 3, 4]
+
+List Comprehensions:
+    squares = [x*x for x in range(5)]
+    print(squares)  # [0, 1, 4, 9, 16]
+
+Nested Lists:
+    matrix = [[1, 2], [3, 4]]
+    print(matrix[1][0])  # 3
