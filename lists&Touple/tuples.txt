@@ -1,0 +1,81 @@
+
+What is a Tuple?
+
+A tuple is a built-in Python data type used to store multiple items in a single variable, just like a list. But unlike lists, tuples are immutable — which means once created, you can't change their contents.
+
+Syntax:
+    my_tuple = (1, 2, 3)
+
+- Tuples are defined using parentheses ().
+- Items are ordered, allow duplicates, and are immutable.
+
+Key Features:
+
+Feature             | Description
+--------------------|--------------------------------------------------------
+Ordered             | Items have a fixed order and can be accessed by index.
+Immutable           | You cannot change, add, or remove items after creation.
+Indexed             | You can access items using indices like lists.
+Allows Duplicates   | Yes, tuples can contain repeated values.
+Can store mixed types | Numbers, strings, lists, even other tuples.
+
+Creating Tuples:
+
+Basic Tuple:
+    my_tuple = (10, 20, 30)
+
+Without Parentheses:
+    my_tuple = 10, 20, 30
+
+Single Item Tuple:
+    one_item = (5,)        # Correct
+    not_a_tuple = (5)      # Not a tuple, just an integer
+
+Accessing Tuple Items:
+    my_tuple = ('apple', 'banana', 'cherry')
+    print(my_tuple[1])  # Output: 'banana'
+    print(my_tuple[-1]) # Output: 'cherry'
+
+Tuple Slicing:
+    print(my_tuple[1:])   # ('banana', 'cherry')
+    print(my_tuple[:2])   # ('apple', 'banana')
+
+Looping Through Tuples:
+    for item in my_tuple:
+        print(item)
+
+Check for Item Existence:
+    if 'banana' in my_tuple:
+        print("Yes!")
+
+Tuple Length:
+    len(my_tuple)
+
+Why Use Tuples?
+
+- Data protection — Immutability prevents accidental changes.
+- Performance — Slightly faster than lists.
+- Used as keys in dictionaries — Lists can’t be used as dictionary keys.
+
+Tuple Methods:
+
+    my_tuple = (1, 2, 2, 3)
+    my_tuple.count(2)   # Output: 2
+    my_tuple.index(3)   # Output: 3
+
+Nested Tuples:
+    nested = ((1, 2), (3, 4))
+    print(nested[1][0])  # Output: 3
+
+Tuples with Different Data Types:
+    mixed = (1, "hello", [2, 3], (4, 5))
+
+Immutability in Practice:
+
+    my_tuple = (1, 2, 3)
+    my_tuple[0] = 10  # ❌ TypeError
+
+Mutable elements inside tuples:
+    t = (1, [2, 3])
+    t[1][0] = 99
+    print(t)  # (1, [99, 3])
